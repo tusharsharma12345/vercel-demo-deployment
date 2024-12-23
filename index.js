@@ -17,6 +17,10 @@ app.use('/api/users', userRoutes);
 app.get('/',(req,res)=>{
     res.send({status: true, msg:"We are connected."});
 })
+app.get('/verceltesting',(req,res)=>{
+    res.send({status: true, msg:"All correct.",source:"I am vercel testing endpoint."});
+})
+
 
 // Database connection
 // mongoose();
